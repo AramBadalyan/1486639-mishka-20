@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Арам Бадалян](https://up.htmlacademy.ru/adaptive/20/user/1486639).
-* Наставник: `Неизвестно`.
+* Наставник: [Влад Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
