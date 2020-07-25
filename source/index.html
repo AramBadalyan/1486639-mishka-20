@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-logo">
-        <img src="img/mishka-logo-mobile.svg">
+        <img src="img/mishka-logo-mobile.svg" alt="Логотип магазина">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Показать/скрыть пункты меню
-          </span>
-        </button>
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">
+              Показать/скрыть пункты меню
+            </span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="catalog.html">
@@ -69,55 +70,57 @@
         </div>
       </section>
 
-      <section class="good">
-        <h2 class="good__name">
-          Вязаные корзинки
-        </h2>
+      <section class="product">
+        <div class="product__wrapper">
+          <h2 class="product__name">
+            Вязаные корзинки
+          </h2>
 
-        <p class="good__specificity good__specificity--week-product">
-          Товар недели
-        </p>
+          <p class="product__specificity product__specificity--week-product">
+            Товар недели
+          </p>
 
-        <p class="good__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
+          <p class="product__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
 
-        <ul class="good__features features-list">
-          <li class="features-list__item">
-            <span class="features-list__term">
-              Цвет:
-            </span>
-            <span class="features-list__definition">
-              «Тиффани»/серый
-            </span>
-          </li>
-          <li class="features-list__item">
-            <span class="features-list__term">
-              Диаметр:
-            </span>
-            <span class="features-list__definition">
-              25 см
-            </span>
-          </li>
-          <li class="features-list__item">
-            <span class="features-list__term">
-              Высота:
-            </span>
-            <span class="features-list__definition">
-              15 см
-            </span>
-          </li>
-        </ul>
+          <ul class="product__features features-list">
+            <li class="features-list__item">
+              <span class="features-list__term">
+                Цвет:
+              </span>
+              <span class="features-list__definition">
+                «Тиффани»/серый
+              </span>
+            </li>
+            <li class="features-list__item">
+              <span class="features-list__term">
+                Диаметр:
+              </span>
+              <span class="features-list__definition">
+                25 см
+              </span>
+            </li>
+            <li class="features-list__item">
+              <span class="features-list__term">
+                Высота:
+              </span>
+              <span class="features-list__definition">
+                15 см
+              </span>
+            </li>
+          </ul>
 
-        <img class="good__img" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзинки разных размеров и расцветок">
+          <img class="product__img" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзинки разных размеров и расцветок">
 
-        <p class="good__price">
-          Цена: 990 руб.
-        </p>
+          <p class="product__price">
+            Цена: 990 руб.
+          </p>
 
-        <a href="#" class="good__order-button button" type="button">
-          Заказать
-        </a>
+          <a href="#" class="product__order-button button" type="button">
+            Заказать
+          </a>
+        </div>
       </section>
 
       <section class="about-us">
@@ -196,13 +199,15 @@
                 адрес:
               </span>
               <address class="contacts__value">
-                г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101
+                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
               </address>
             </li>
           </ul>
+        </div>
 
-          <img class="contact-info__map" src="https://via.placeholder.com/322x457" width="322" height="457" alt="Наше местоположение на карте">
+        <img class="contact-info__map" src="https://via.placeholder.com/322x457" width="322" height="457" alt="Наше местоположение на карте">
 
+        <div class="contact-info__wrapper">
           <a href="#" class="contact-info__write-us-button button">
             Напишите нам
           </a>
