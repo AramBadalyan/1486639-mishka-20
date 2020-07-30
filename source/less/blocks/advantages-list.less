@@ -2,10 +2,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
 }
 
 .advantages-list__item {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
