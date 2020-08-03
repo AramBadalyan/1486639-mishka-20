@@ -2,4 +2,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
 }

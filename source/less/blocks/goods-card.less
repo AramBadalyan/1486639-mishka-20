@@ -1,17 +1,56 @@
+.goods-card {
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .goods-card__name {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
-.goods-card__description {
+.goods-card__parameters {
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .goods-card__price {
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.goods-card__img {
+  // Размеры пока для наглядности
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
 }
