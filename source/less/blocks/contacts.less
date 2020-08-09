@@ -2,14 +2,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .contacts__item {
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 334px;
+  }
 }
 
 .contacts__item address {
   font-style: normal;
+}
+
+.contacts__type {
+  vertical-align: top;
+  padding-right: 25px;
+}
+
+.contacts__value {
+  display: inline-block;
+  max-width: 184px;
+}
+
+.contacts__value--link {
+  border-bottom: 1px solid @base-color;
 }

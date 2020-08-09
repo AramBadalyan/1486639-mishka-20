@@ -2,4 +2,14 @@
   margin: 0 auto;
   padding: 0 30px;
   min-width: 320px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }

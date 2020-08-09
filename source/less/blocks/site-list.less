@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -9,6 +13,41 @@
   font-weight: 700;
   line-height: 24px;
 
-  padding-top: 27px;
+  @media (max-width: @mobile-width-only) {
+    box-shadow: 0 1px 0 @basic-gray,
+      inset 0 1px 0 @basic-gray;
+  }
+}
+
+.site-list__link {
+  padding-top: 28px;
   padding-bottom: 27px;
+  padding-left: 31px;
+
+  display: block;
+  position: relative;
+}
+
+.site-list__name {
+  @media (max-width: @mobile-width-only) {
+    padding-left: 45px;
+  }
+}
+
+.site-list__name--hidden {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.site-list__icon {
+  opacity: 0.2;
+  position: absolute;
 }

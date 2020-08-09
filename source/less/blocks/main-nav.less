@@ -1,5 +1,149 @@
 .main-nav__wrapper {
   margin: 0 auto;
-  padding: 0 30px;
+  z-index: 2;
+  /* padding: 0 30px; */
   min-width: 320px;
+  width: 320px;
+
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__logo {
+    order: 1;
+  }
+
+  .main-nav__cart {
+    order: 2;
+    flex-grow: 1;
+    justify-content: flex-end;
+    /* margin-left: auto; */
+  }
+
+  .main-nav__list {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    order: 1;
+    flex-basis: 450px;
+    flex-grow: 1;
+  }
+
+  .main-nav__logo {
+    order: 2;
+    flex-basis: 150px;
+  }
+
+  .main-nav__cart {
+    order: 3;
+    flex-basis: 450px;
+  }
+
+  .main-nav__additional {
+    order: 4;
+  }
+}
+
+.main-nav__wrapper .main-nav__additional {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.main-nav__shipping {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #444444;
+
+  margin-left: auto;
+  order: 100;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__list,
+.main-nav--closed .main-nav__cart
+ {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: @basic-black;
+  box-shadow: 0 6px 0 0 @basic-black, 0 12px 0 0 @basic-black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    width: 29px;
+    height: 2px;
+    background-color: @basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
