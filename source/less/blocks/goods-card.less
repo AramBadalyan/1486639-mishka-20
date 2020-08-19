@@ -5,10 +5,31 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 52px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
+    margin: 0;
+  }
+}
+
+.goods-card__description {
+  margin: 0;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 34px;
+    padding-right: 32px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
+    min-height: 191px;
   }
 }
 
@@ -17,8 +38,18 @@
   font-weight: 700;
   line-height: 24px;
 
+  margin: 0;
+  padding-top: 24px;
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    padding-top: 27px;
+    padding-right: 30px; /* Для переноса "Большая корзинка для игрушек" */
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 22px;
+    padding-right: 20px;
   }
 }
 
@@ -26,6 +57,9 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
+
+  margin: 0;
+  padding-top: 6px;
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
@@ -37,8 +71,20 @@
   font-weight: 700;
   line-height: 24px;
 
+  margin: 0;
+  margin-top: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+
+  border-top: 1px solid @basic-gray;
+
   @media (min-width: @tablet-width) {
     font-size: 17px;
+
+    margin: 0;
+    margin-top: auto;
+    padding: 25px 0;
   }
 }
 
@@ -53,4 +99,10 @@
     width: 316px;
     height: 462px;
   }
+}
+
+.goods-card__to-cart {
+  position: absolute;
+  right: 0;
+  opacity: 0.2;
 }

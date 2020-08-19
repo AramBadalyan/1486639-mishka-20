@@ -5,6 +5,11 @@
   @media (min-width: @tablet-width) {
     margin-top: 57px;
     padding-top: 33px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 105px;
   }
 }
 
@@ -17,8 +22,11 @@
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     padding: 0 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
   }
 

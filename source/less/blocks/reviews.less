@@ -5,20 +5,31 @@
   width: 320px;
 
   @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+    background-image: url(../img/review@1x.jpg);
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+
     width: @tablet-width;
     padding: 0 50px;
+    padding-top: 79px;
+    padding-bottom: 20px;
+    min-height: 378px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: min-content min-content min-content;
   }
 
   @media (min-width: @desktop-width) {
+    background-position-x: 50px;
+
     width: @desktop-width;
+    padding-bottom: 69px;
 
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: min-content 1fr min-content;
   }
 }
 
@@ -45,6 +56,8 @@
 
     grid-row-start: 1;
     grid-column-start: 2;
+
+    margin: 0;
   }
 }
 
@@ -69,6 +82,9 @@
   @media (min-width: @desktop-width) {
     grid-row-start: 2;
     grid-column-start: 2;
+
+    margin-top: 35px;
+    margin-bottom: 42px;
   }
 }
 
@@ -76,6 +92,8 @@
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+
     grid-row-start: 3;
     grid-column-start: 1;
   }
@@ -115,5 +133,7 @@
   @media (min-width: @desktop-width) {
     grid-row-start: 1;
     grid-column-start: 3;
+
+    align-self: baseline;
   }
 }

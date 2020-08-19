@@ -3,4 +3,10 @@
   margin: 0;
 
   overflow-x: hidden;
+
+  @media (min-width: @tablet-width) {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 152px 1fr min-content;
+  }
 }

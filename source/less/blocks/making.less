@@ -1,0 +1,30 @@
+.making {
+  min-width: 320px;
+  width: 320px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.making__wrapper {
+  min-height: 502px;
+
+  border: 1px solid @basic-gray;
+
+  @media (min-width: @tablet-width) {
+    min-height: 742px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 455px;
+  }
+}

@@ -20,7 +20,7 @@
 
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: auto auto auto auto 55px;
+    grid-template-rows: 166px auto auto auto 55px;
   }
 }
 
@@ -40,6 +40,7 @@
 
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
+    align-self: end;
   }
 }
 
@@ -116,6 +117,8 @@
   @media (min-width: @desktop-width) {
     order: -1;
     flex-basis: 175px;
+
+    padding-right: 12px;
   }
 
   &--week-product {
@@ -141,6 +144,9 @@
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
+
+    margin: 0;
+    padding-right: 58px;
   }
 }
 
@@ -152,6 +158,9 @@
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
+
+    margin: 0;
+    padding-right: 58px;
   }
 }
 
@@ -175,6 +184,10 @@
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
+    align-self: end;
+
+    margin-bottom: 29px;
+    padding-right: 58px;
   }
 }
 
@@ -187,5 +200,6 @@
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
+    margin-right: 58px;
   }
 }
