@@ -1,6 +1,11 @@
 .page-footer {
   background-color: #f1f1f1;
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 57px;
+    padding-top: 33px;
+  }
 }
 
 .page-footer__wrapper {
@@ -12,12 +17,18 @@
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: baseline;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @tablet-width) {
+    justify-self: end;
   }
 }

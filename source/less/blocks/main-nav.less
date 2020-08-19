@@ -28,13 +28,26 @@
 
   .main-nav__cart {
     order: 2;
+    flex-basis: 400px;
     flex-grow: 1;
     justify-content: flex-end;
     /* margin-left: auto; */
   }
 
+  .main-nav__cart .site-list__item {
+    padding: 0;
+    padding-left: 35px;
+    min-width: 83px; /* такая дичь */
+  }
+
   .main-nav__list {
     order: 3;
+  }
+
+  .main-nav__list .site-list__item{
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 5px;
   }
 }
 
