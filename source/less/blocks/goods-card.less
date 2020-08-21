@@ -31,6 +31,15 @@
     padding-left: 27px;
     min-height: 191px;
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .goods-card__name {
@@ -51,6 +60,8 @@
     padding-top: 22px;
     padding-right: 20px;
   }
+
+  .link-interactivity();
 }
 
 .goods-card__parameters {
@@ -105,4 +116,6 @@
   position: absolute;
   right: 0;
   opacity: 0.2;
+
+  .icons-interactivity(@base-color);
 }

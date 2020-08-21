@@ -54,4 +54,13 @@
 
 .contacts__value--link {
   border-bottom: 1px solid @base-color;
+
+  &:hover,
+  &:focus {
+    color: @base-color;
+  }
+
+  &:active {
+    border-bottom-color: fade(@base-color, 10%);
+  }
 }
