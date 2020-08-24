@@ -1,16 +1,221 @@
+.page-main {
+  background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -63px;
+  }
+}
+
 .page-main__title {
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+  text-align: center;
 
-  background-color: #f1f1f1;
-  padding: 75px 30px;
+  background-color: @basic-light-gray;
+
+  padding: 73px 30px;
+  margin: 0 auto;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     .tablet-title();
+
+    padding: 102px 50px;
+    padding-bottom: 73px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     .desktop-title();
+    padding-bottom: 92px;
+  }
+}
+
+.page-main__about-us {
+  position: relative;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 73px;
+  }
+}
+
+.page-main__about-us::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin-bottom: 32px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: auto 6px;
+  background-position: center;
+  background-repeat: repeat-x;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 17px;
+    margin-bottom: 57px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 17px;
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: auto 23px;
+
+    width: @desktop-width - 100px;
+    height: 23px;
+
+    margin: 0 auto;
+    margin-bottom: 67px;
+  }
+}
+
+.page-main__product {
+  position: relative;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -17px;
+  }
+}
+
+.page-main__product::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 40px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 24px;
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -17px;
+    height: 34px;
+    background-size: auto 34px;
+    margin-bottom: 42px;
+  }
+}
+
+.page-main__reviews {
+  margin-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    /* padding-top: 79px; */
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 34px;
+  }
+}
+
+.page-main__contact-info {
+  margin-top: 45px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 68px;
+  }
+}
+
+.page-main__contact-info::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin-bottom: 38px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: auto 6px;
+  background-position: center;
+  background-repeat: repeat-x;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 17px;
+    margin-bottom: 46px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 17px;
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: auto 23px;
+
+    width: @desktop-width - 100px;
+    height: 23px;
+
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
+
+.page-main__goods {
+  position: relative;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -12px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -14px;
+  }
+}
+
+.page-main__goods::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+
+    margin-bottom: 67px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 24px;
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 34px;
+    background-size: auto 34px;
+
+    margin-bottom: 110px;
+  }
+}
+
+.page-main__making {
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
   }
 }

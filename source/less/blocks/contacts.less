@@ -2,14 +2,65 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .contacts__item {
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    min-width: 334px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 29px;
+  }
 }
 
 .contacts__item address {
   font-style: normal;
+}
+
+.contacts__type {
+  vertical-align: top;
+  padding-right: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
+}
+
+.contacts__value {
+  display: inline-block;
+  max-width: 184px; /* для чего? заменить */
+
+  @media (min-width: @tablet-width) {
+    max-width: none;
+  }
+}
+
+.contacts__value--link {
+  border-bottom: 1px solid @base-color;
+
+  &:hover,
+  &:focus {
+    color: @base-color;
+  }
+
+  &:active {
+    border-bottom-color: fade(@base-color, 10%);
+  }
 }

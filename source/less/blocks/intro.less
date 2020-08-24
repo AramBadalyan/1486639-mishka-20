@@ -3,26 +3,27 @@
   background-color: #f1f1f1;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 575px;
+  background-size: cover;
 }
 
 .intro__wrapper {
   margin: 0 auto;
-  padding: 0 30px;
   min-width: 320px;
-}
+  width: 320px;
+  min-height: 488px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-.intro__shipping {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #444444;
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    min-height: 745px;
+    padding: 0 50px;
+  }
 
-  margin: 0;
-  text-align: right;
-
-  @media (max-width: @mobile-width-only) {
-    display: none;
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
   }
 }
 
@@ -30,11 +31,14 @@
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+  margin-top: 73px;
+  padding: 0 30px;
 
   text-align: center;
 
   @media (min-width: @tablet-width) {
     .tablet-title();
+    margin-top: 157px;
   }
 
   @media (min-width: @desktop-width) {
