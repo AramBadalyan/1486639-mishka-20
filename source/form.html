@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1">
   <title>Форма заказа</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +26,11 @@
         </button>
 
         <a href="index.html" class="main-nav__logo page-logo">
-          <img src="img/mishka-logo-mobile.svg" alt="Логотип магазина">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Вязаные корзинки разных размеров и расцветок">
+          </picture>
         </a>
 
         <ul class="main-nav__list">

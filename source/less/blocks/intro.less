@@ -1,9 +1,32 @@
 .intro {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-color: #f1f1f1;
+  background-color: #fafafa;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center -18px;
+  background-size: auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: contain;
+    }
+  }
 }
 
 .intro__wrapper {
