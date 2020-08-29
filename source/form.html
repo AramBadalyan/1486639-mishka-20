@@ -13,7 +13,7 @@
 <body class="page__body">
   <header class="page-header">
 
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <!-- main-nav--opened - открывает главное меню в мобильной версии
       main-nav--closed - закрывает
       main-nav--nojs - на случай, если js не поддерживается -->
@@ -119,11 +119,11 @@
           Тип
         </h2>
         <div class="order-form__fields">
-          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_accessory" value="accessory" checked>
+          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_accessory" value="accessory" tabindex="-1" checked>
           <label class="order-form__label order-form__label--radio" for="product-type_accessory" tabindex="0">
             Аксессуар для интерьера
           </label>
-          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_toy" value="toy">
+          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_toy" value="toy" tabindex="-1">
           <label class="order-form__label order-form__label--radio" for="product-type_toy" tabindex="0">
             Детская игрушка
           </label>
@@ -135,27 +135,27 @@
           Цвет
         </h2>
         <div class="order-form__fields order-form__fields--column-direction">
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-white" name="white" checked>
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-white" name="white" tabindex="-1" checked>
           <label class="order-form__label order-form__label--checkbox" for="color-white" tabindex="0">
             Белый
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-grey" name="grey" checked>
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-grey" name="grey" tabindex="-1" checked>
           <label class="order-form__label order-form__label--checkbox" for="color-grey" tabindex="0">
             Серый
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-tiffany" name="tiffany">
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-tiffany" name="tiffany" tabindex="-1">
           <label class="order-form__label order-form__label--checkbox" for="color-tiffany" tabindex="0">
             «Тиффани»
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-black" name="black">
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-black" name="black" tabindex="-1">
           <label class="order-form__label order-form__label--checkbox" for="color-black" tabindex="0">
             Черный
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-pink" name="pink">
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-pink" name="pink" tabindex="-1">
           <label class="order-form__label order-form__label--checkbox" for="color-pink" tabindex="0">
             Розовый
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-orange" name="orange">
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-orange" name="orange" tabindex="-1">
           <label class="order-form__label order-form__label--checkbox" for="color-orange" tabindex="0">
             Оранжевый
           </label>
@@ -186,19 +186,24 @@
         <h2 class="order-form__legend">
           Тел
         </h2>
-        <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <div class="order-form__fields">
+          <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </div>
         <h2 class="order-form__legend">
           e-mail
         </h2>
-        <input class="order-form__input" type="email" name="email" placeholder="Ваш Email*">
+        <div class="order-form__fields">
+          <input class="order-form__input" type="email" name="email" placeholder="Ваш Email*">
+        </div>
       </div>
 
       <div class="order-form__fieldset order-form__additional order-form__wrapper">
         <h2 class="order-form__legend">
           Доп
         </h2>
-        <textarea class="order-form__input" name="additional-info" rows="4">Опишите все ваши пожелания к заказу
-        </textarea>
+        <div class="order-form__fields">
+          <textarea class="order-form__input" name="additional-info" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
       </div>
 
       <div class="order-form__footer order-form__wrapper">
