@@ -1,0 +1,120 @@
+.to-cart__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  padding: 15px 30px;
+  margin: 0 auto;
+
+  background-color: @basic-white;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+    padding: 15px 108px;
+  }
+}
+
+.to-cart__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+    margin-bottom: 6px;
+    font-size: 30px;
+    line-height: 57px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.to-cart__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: @basic-dark;
+  margin-top: 7px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.to-cart__sizes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
+  margin-bottom: 15px;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+}
+
+.to-cart__size-button {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+
+  width: 100%;
+  padding: 16px;
+  background-color: transparent;
+  border: 2px solid fade(@basic-dark, 10%);
+
+  &:hover,
+  &:focus {
+    border: 2px solid fade(@basic-dark, 30%);
+  }
+
+  &:active {
+    border: 2px solid @base-color;
+  }
+}
+
+.to-cart__add-button {
+  color: @basic-white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+
+  margin-top: 16px;
+  margin-bottom: 31px;
+
+  width: 100%;
+  background-color: @base-color;
+  padding: 18px;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background-color: @base-color-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

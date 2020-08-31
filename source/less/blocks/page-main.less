@@ -48,7 +48,8 @@
 .page-main__about-us::before {
   content: "";
   display: block;
-  width: 100%;
+  width: @mobile-width;
+  margin: 0 auto;
   height: 6px;
   margin-bottom: 32px;
 
@@ -60,14 +61,15 @@
   @media (min-width: @tablet-width) {
     content: "";
     display: block;
-    width: 100%;
+    width: @tablet-width;
+    margin: 0 auto;
     height: 17px;
     margin-bottom: 57px;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: auto 17px;
     background-position: center;
-    background-repeat: repeat-x;
+    background-repeat: round;
   }
 
   @media (min-width: @desktop-width) {
@@ -83,7 +85,7 @@
 
 .page-main__product {
   position: relative;
-  margin-top: 34px;
+  margin-top: 30px;
 
   @media (min-width: @tablet-width) {
     margin-top: -12px;
@@ -133,19 +135,21 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    margin-top: 71px;
+    margin-top: 68px;
     padding-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
-  padding-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 
 .page-main__contact-info::before {
   content: "";
   display: block;
-  width: 100%;
+  /* width: 100%; */
+  width: @mobile-width;
+  margin: 0 auto;
   height: 6px;
   margin-bottom: 38px;
 
@@ -157,14 +161,16 @@
   @media (min-width: @tablet-width) {
     content: "";
     display: block;
-    width: 100%;
+    /* width: 100%; */
+    width: @tablet-width;
+    margin: 0 auto;
     height: 17px;
     margin-bottom: 46px;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: auto 17px;
     background-position: center;
-    background-repeat: repeat-x;
+    background-repeat: round;
   }
 
   @media (min-width: @desktop-width) {
