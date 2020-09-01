@@ -12,9 +12,11 @@
   line-height: 18px;
 
   margin-right: 20px;
+  padding-top: 5px;
 
-  @media (max-width: @mobile-width-only) {
-    padding-top: 5px;
+  @media (min-width: @tablet-width) {
+    margin-right: 15px;
+    padding-top: 0;
   }
 }
 
@@ -23,6 +25,10 @@
   height: auto;
 
   padding-top: 6px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 
   fill: @base-color;
 
