@@ -3,9 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,10 +11,10 @@
 <body class="page__body">
   <header class="page-header">
 
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <!-- main-nav--opened - открывает главное меню в мобильной версии
-          main-nav--closed - закрывает
-          main-nav--nojs - на случай, если js не поддерживается -->
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <!-- модификатор opened для main-nav: открывает главное меню в мобильной версии
+          closed - закрывает
+          nojs - на случай, если js не поддерживается -->
 
       <div class="main-nav__wrapper">
 
@@ -121,12 +119,11 @@
           <ul class="goods-list">
             <li class="goods-list__item goods-card">
               <a href="#" class="goods-card__img">
-                <picture >
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-hare-desktop@1x.jpg, photo-hare-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/photo-hare-tablet@1x.jpg, photo-hare-tablet@2x.jpg 2x">
-                  <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Вязанная большая корзина для игрушек">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
+                  <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x"
+                    alt="Вязанная большая корзина для игрушек">
                 </picture>
               </a>
               <div class="goods-card__description">
@@ -154,11 +151,10 @@
             <li class="goods-list__item goods-card">
               <a href="#" class="goods-card__img">
                 <picture>
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-bowl-desktop@1x.jpg, photo-bowl-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/photo-bowl-tablet@1x.jpg, photo-bowl-tablet@2x.jpg 2x">
-                  <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Вязанная большая корзина для игрушек">
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"
+                    alt="Вязанная большая корзина для игрушек">
                 </picture>
               </a>
               <div class="goods-card__description">
@@ -187,10 +183,11 @@
               <a href="#" class="goods-card__img">
                 <picture>
                   <source media="(min-width: 1150px)"
-                    srcset="img/photo-toys-desktop@1x.jpg, photo-toys-desktop@2x.jpg 2x">
+                    srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="img/photo-toys-tablet@1x.jpg, photo-toys-tablet@2x.jpg 2x">
-                  <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Вязанная большая корзина для игрушек">
+                    srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
+                  <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x"
+                    alt="Вязанная большая корзина для игрушек">
                 </picture>
               </a>
               <div class="goods-card__description">
@@ -222,6 +219,28 @@
     <div class="page-main__making">
       <section class="making">
         <div class="making__wrapper">
+          <h2 class="making__title">
+            Процесс производства
+          </h2>
+
+          <div class="making__video">
+            <video class="making__video-frame"></video>
+            <button class="making__video-play"></button>
+          </div>
+
+          <!-- <picture class="making__video-preview">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+            <img class="making__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Превью видеоролика">
+          </picture> -->
+
+          <p class="making__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+
+          <a href="form.html" class="making__order-button button">
+            Сделать заказ
+          </a>
 
         </div>
       </section>
@@ -325,23 +344,23 @@
         Выберите размер:
       </p>
 
-      <ul class="to-cart__sizes">
-        <li class="to-cart__size">
-          <button type="button" class="to-cart__size-button">
-            s
-          </button>
-        </li>
-        <li class="to-cart__size">
-          <button type="button" class="to-cart__size-button">
-            m
-          </button>
-        </li>
-        <li class="to-cart__size">
-          <button type="button" class="to-cart__size-button">
-            l
-          </button>
-        </li>
-      </ul>
+      <form class="to-cart__sizes">
+        <input class="to-cart__input visually-hidden" type="radio" name="product-size" id="product-size_s" value="s"
+          tabindex="-1" checked>
+        <label class="to-cart__size" for="product-size_s" tabindex="0">
+          S
+        </label>
+        <input class="to-cart__input visually-hidden" type="radio" name="product-size" id="product-size_m" value="m"
+          tabindex="-1">
+        <label class="to-cart__size" for="product-size_m" tabindex="0">
+          M
+        </label>
+        <input class="to-cart__input visually-hidden" type="radio" name="product-size" id="product-size_l" value="l"
+          tabindex="-1">
+        <label class="to-cart__size" for="product-size_l" tabindex="0">
+          L
+        </label>
+      </form>
 
       <button type="button" class="to-cart__add-button">
         Добавить

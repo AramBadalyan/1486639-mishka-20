@@ -544,23 +544,20 @@
         Выберите размер:
       </p>
 
-      <ul class="to-cart__sizes">
-        <li class="to-cart__size">
-          <button type="button" class="to-cart__size-button">
-            s
-          </button>
-        </li>
-        <li class="to-cart__size">
-          <button type="button" class="to-cart__size-button">
-            m
-          </button>
-        </li>
-        <li class="to-cart__size">
-          <button type="button" class="to-cart__size-button">
-            l
-          </button>
-        </li>
-      </ul>
+      <form class="to-cart__sizes">
+        <input class="to-cart__input visually-hidden" type="radio" name="product-size" id="product-size_s" value="s" tabindex="-1" checked>
+        <label class="to-cart__size" for="product-size_s" tabindex="0">
+          S
+        </label>
+        <input class="to-cart__input visually-hidden" type="radio" name="product-size" id="product-size_m" value="m" tabindex="-1">
+        <label class="to-cart__size" for="product-size_m" tabindex="0">
+          M
+        </label>
+        <input class="to-cart__input visually-hidden" type="radio" name="product-size" id="product-size_l" value="l" tabindex="-1">
+        <label class="to-cart__size" for="product-size_l" tabindex="0">
+          L
+        </label>
+      </form>
 
       <button type="button" class="to-cart__add-button">
         Добавить
