@@ -26,8 +26,6 @@
   }
 
   .main-nav__cart {
-    /* padding-top: 15px;
-    padding-bottom: 15px; */
     padding: 0;
     padding-left: 83px;
 
@@ -35,12 +33,9 @@
     flex-basis: 400px;
     flex-grow: 1;
     justify-content: flex-end;
-    /* margin-left: auto; */
   }
 
   .main-nav__list {
-    /* padding-top: 15px;
-    padding-bottom: 15px; */
     font-size: 15px;
     line-height: 24px;
     padding-top: 5px;
@@ -110,7 +105,11 @@
 
 .main-nav--nojs .main-nav__list,
 .main-nav--nojs .main-nav__cart {
-  display: flex;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__toggle {
@@ -163,28 +162,6 @@
   }
 }
 
-/* .main-nav__logo {
-  background-color: rgba(0, 255, 0, 0.1);
-}
-
-.main-nav__list {
-  background-color: rgba(255, 0, 0, 0.1);
-}
-
-.main-nav__cart {
-  background-color: rgba(0, 0, 255, 0.1);
-}
-
-.main-nav__additional {
-  background-color: rgba(180, 180, 0, 0.1);
-}
-
-.main-nav__shipping {
-  background-color: rgba(180, 0, 180, 0.1);
-}
- */
-
-/* Links like main-nav elements */
 .main-nav__list,
 .main-nav__cart,
 .main-nav__additional {

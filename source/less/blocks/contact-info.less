@@ -74,6 +74,16 @@
   width: 100vw;
   height: 455px;
 
+  background-color: @basic-dark;
+  background-image: url("../img/map-tablet@1x.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-tablet@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     height: 457px;
     grid-column: ~"1 / -1";
