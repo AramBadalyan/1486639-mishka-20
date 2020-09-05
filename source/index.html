@@ -122,8 +122,16 @@
         </g>
       </g>
       <g>
-        <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691" />
+        <rect x="-11.34" y="-28.346" fill="#231F20" width="4" height="82" />
       </g>
+    </symbol>
+    <symbol viewBox="0 0 50 26" id="icon-arrow-left">
+      <polygon
+        points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 " />
+    </symbol>
+    <symbol viewBox="0 0 50 26" id="icon-arrow-right">
+      <polygon
+        points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 " />
     </symbol>
   </svg>
 
@@ -169,7 +177,7 @@
 
         <ul class="main-nav__cart">
           <li class="main-nav__item">
-            <svg role="button" aria-label="Поиск по сайту" class="main-nav__icon" width="17.6px" height="17.6px">
+            <svg role="img" aria-label="Поиск по сайту" class="main-nav__icon" width="17" height="17">
               <use xlink:href="#icon-search"></use>
             </svg>
             <a class="main-nav__link main-nav__link--only-icon" href="#">
@@ -179,7 +187,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <svg class="main-nav__icon" width="20.29px" height="18.85px">
+            <svg class="main-nav__icon" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
             <a class="main-nav__link" href="#">
@@ -235,7 +243,7 @@
                 <span class="categories-list__link">
                   Предметы интерьера
                 </span>
-                <svg class="categories-list__icon" width="60px" height="62px">
+                <svg class="categories-list__icon" width="60" height="62">
                   <use xlink:href="#icon-interior"></use>
                 </svg>
               </a>
@@ -245,7 +253,7 @@
                 <span class="categories-list__link">
                   Детские игрушки
                 </span>
-                <svg class="categories-list__icon" width="60px" height="60px">
+                <svg class="categories-list__icon" width="60" height="60">
                   <use xlink:href="#icon-toys"></use>
                 </svg>
               </a>
@@ -337,42 +345,42 @@
 
           <ul class="about-us__advantages advantages-list">
             <li class="advantages-list__item">
-              <svg class="advantages-list__icon" width="31.972px" height="37.301px">
+              <svg class="advantages-list__icon" width="32" height="37">
                 <use xlink:href="#icon-feature-flower"></use>
               </svg>
 
               <span class="advantages-list__description">Экологически<br>чистые материалы</span>
             </li>
             <li class="advantages-list__item">
-              <svg class="advantages-list__icon" width="46.575px" height="27.332px">
+              <svg class="advantages-list__icon" width="47" height="27">
                 <use xlink:href="#icon-feature-money"></use>
               </svg>
 
               <span class="advantages-list__description">Скандинавский стиль<br>по российской цене</span>
             </li>
             <li class="advantages-list__item">
-              <svg class="advantages-list__icon" width="33.05px" height="27.857px">
+              <svg class="advantages-list__icon" width="33" height="28">
                 <use xlink:href="#icon-feature-heart"></use>
               </svg>
 
               <span class="advantages-list__description">Увеличивает лайки<br>на фотографиях</span>
             </li>
             <li class="advantages-list__item">
-              <svg class="advantages-list__icon" width="34.373px" height="34.373px">
+              <svg class="advantages-list__icon" width="34" height="34">
                 <use xlink:href="#icon-feature-ball"></use>
               </svg>
 
               <span class="advantages-list__description">Связано вручную с<br>любовью и умилением</span>
             </li>
             <li class="advantages-list__item">
-              <svg class="advantages-list__icon" width="54.156px" height="23.183px">
+              <svg class="advantages-list__icon" width="54" height="23">
                 <use xlink:href="#icon-feature-rocket"></use>
               </svg>
 
               <span class="advantages-list__description">Поддержка отечественного<br>производителя</span>
             </li>
             <li class="advantages-list__item">
-              <svg class="advantages-list__icon" width="32.666px" height="32.486px">
+              <svg class="advantages-list__icon" width="32" height="32">
                 <use xlink:href="#icon-feature-gift"></use>
               </svg>
 
@@ -407,22 +415,16 @@
 
           <ul class="reviews__arrows arrows">
             <li class="arrows__item arrows__item--back">
-              <button type="button" class="arrows__button">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003"
-                  xml:space="preserve">
-                  <polygon
-                    points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 " />
+              <button type="button" class="arrows__button" aria-label="Предыдущий отзыв">
+                <svg width="50" height="26">
+                  <use xlink:href="#icon-arrow-left"></use>
                 </svg>
               </button>
             </li>
             <li class="arrows__item arrows__item--forward">
-              <button type="button" class="arrows__button">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003"
-                  xml:space="preserve">
-                  <polygon
-                    points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 " />
+              <button type="button" class="arrows__button" aria-label="Следующий отзыв">
+                <svg width="50" height="26">
+                  <use xlink:href="#icon-arrow-right"></use>
                 </svg>
               </button>
             </li>
@@ -442,7 +444,7 @@
             Контакты
           </h2>
 
-          <svg class="contact-info__flag" width="46.68px" height="81.691px">
+          <svg class="contact-info__flag" width="47" height="82">
             <use xlink:href="#icon-flag"></use>
           </svg>
 
@@ -483,7 +485,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="logo-footer">
-        <svg role="img" aria-label="Логотип Mishka" width="101.615px" height="34.056px">
+        <svg role="img" aria-label="Логотип Mishka" width="102" height="34">
           <use xlink:href="#logo-footer"></use>
         </svg>
       </a>
@@ -491,21 +493,21 @@
       <ul class="page-footer__socials socials">
         <li>
           <a class="socials__link" href="#">
-            <svg role="img" aria-label="Наш Instagram" width="22px" height="21px">
+            <svg role="img" aria-label="Наш Instagram" width="22" height="21">
               <use xlink:href="#icon-social-instagram"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="socials__link" href="#">
-            <svg role="img" aria-label="Наш Facebook" width="15px" height="28px">
+            <svg role="img" aria-label="Наш Facebook" width="15" height="28">
               <use xlink:href="#icon-social-facebook"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="socials__link" href="#">
-            <svg role="img" aria-label="Наш Twitter" width="23px" height="20px">
+            <svg role="img" aria-label="Наш Twitter" width="23" height="20">
               <use xlink:href="#icon-social-twitter"></use>
             </svg>
           </a>
