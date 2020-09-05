@@ -1,23 +1,23 @@
-const modal_window = document.querySelector(".page-modal");
-const order_button = document.querySelector(".product__order-button");
-const add_button = document.querySelector(".to-cart__add-button");
-const toCart_buttons = document.querySelectorAll(".goods-card__to-cart");
+const modalWindow = document.querySelector(".page-modal");
+const orderButton = document.querySelector(".product__order-button");
+const addButton = document.querySelector(".to-cart__add-button");
+const toCartButtons = document.querySelectorAll(".goods-card__to-cart");
 
-if (order_button) {
-  order_button.addEventListener("click", function (evt) {
+if (orderButton) {
+  orderButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modal_window.classList.remove("hidden");
+    modalWindow.classList.remove("hidden");
   });
 }
 
-for (let toCart_button of toCart_buttons) {
+for (let toCart_button of toCartButtons) {
   toCart_button.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modal_window.classList.remove("hidden");
+    modalWindow.classList.remove("hidden");
   });
 };
 
-add_button.addEventListener("click", function (evt) {
+addButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modal_window.classList.add("hidden");
+  modalWindow.classList.add("hidden");
 });
