@@ -10,14 +10,9 @@ const rename = require("gulp-rename");
 
 // Styles
 
-const styles = () => {
-  return gulp.src("source/less/style.less")
-    .pipe(plumber())
+const minifyCss = () => {
+  return gulp.src("build/css/style.css")
     .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -25,6 +20,17 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
+const styles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"));
+}
+
+exports.minifyCss = minifyCss;
 exports.styles = styles;
 
 // Images
@@ -109,6 +115,7 @@ const build = gulp.series(
   clean,
   copy,
   styles,
+  minifyCss,
   sprite,
   html
 );
@@ -134,7 +141,9 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/less/**/*.less", gulp.series(
+    styles,
+    minifyCss));
   gulp.watch("source/*.html", gulp.series(html));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
