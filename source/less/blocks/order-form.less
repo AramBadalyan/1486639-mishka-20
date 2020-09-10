@@ -14,12 +14,6 @@
   }
 }
 
-.order-form__fieldset--accent {
-  @media (min-width: @tablet-width) {
-    background-color: @basic-light-gray;
-  }
-}
-
 .order-form__intro {
   padding: 0 30px;
   margin-bottom: 30px;
@@ -43,6 +37,7 @@
 }
 
 .order-form__fieldset {
+  position: relative;
   padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
@@ -62,7 +57,20 @@
   }
 }
 
+.order-form__fieldset--accent::before {
+  @media (min-width: @tablet-width) {
+    content: '';
+    background-color: @basic-light-gray;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .order-form__fields {
+  z-index: 1;
   display: flex;
   flex-direction: column;
 
