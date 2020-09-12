@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Форма заказа</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -107,19 +107,23 @@
 
     <form class="page-main__order-form order-form" action="https://echo.htmlacademy.ru/" method="GET">
       <p class="order-form__intro order-form__wrapper">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+        уточнить детали.
       </p>
 
-      <div class="order-form__fieldset order-form__product-type order-form__wrapper"> <!-- Chrome не поддерживает display: grid/flex для fieldset -->
+      <div class="order-form__fieldset order-form__product-type order-form__wrapper">
+        <!-- Chrome не поддерживает display: grid/flex для fieldset -->
         <p class="order-form__legend">
           Тип
         </p>
         <div class="order-form__fields">
-          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_accessory" value="accessory" tabindex="-1" checked>
+          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_accessory"
+            value="accessory" tabindex="-1" checked>
           <label class="order-form__label order-form__label--radio" for="product-type_accessory" tabindex="0">
             Аксессуар для интерьера
           </label>
-          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_toy" value="toy" tabindex="-1">
+          <input class="order-form__input visually-hidden" type="radio" name="product-type" id="product-type_toy"
+            value="toy" tabindex="-1">
           <label class="order-form__label order-form__label--radio" for="product-type_toy" tabindex="0">
             Детская игрушка
           </label>
@@ -131,15 +135,18 @@
           Цвет
         </p>
         <div class="order-form__fields order-form__fields--column-direction">
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-white" name="white" tabindex="-1" checked>
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-white" name="white" tabindex="-1"
+            checked>
           <label class="order-form__label order-form__label--checkbox" for="color-white" tabindex="0">
             Белый
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-grey" name="grey" tabindex="-1" checked>
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-grey" name="grey" tabindex="-1"
+            checked>
           <label class="order-form__label order-form__label--checkbox" for="color-grey" tabindex="0">
             Серый
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-tiffany" name="tiffany" tabindex="-1">
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-tiffany" name="tiffany"
+            tabindex="-1">
           <label class="order-form__label order-form__label--checkbox" for="color-tiffany" tabindex="0">
             «Тиффани»
           </label>
@@ -151,7 +158,8 @@
           <label class="order-form__label order-form__label--checkbox" for="color-pink" tabindex="0">
             Розовый
           </label>
-          <input class="order-form__input visually-hidden" type="checkbox" id="color-orange" name="orange" tabindex="-1">
+          <input class="order-form__input visually-hidden" type="checkbox" id="color-orange" name="orange"
+            tabindex="-1">
           <label class="order-form__label order-form__label--checkbox" for="color-orange" tabindex="0">
             Оранжевый
           </label>
@@ -165,15 +173,18 @@
         <div class="order-form__fields">
           <label class="order-form__label" for="customer-name_name">
             Имя:
-            <input class="order-form__input" type="text" id="customer-name_name" name="first-name" placeholder="Введите ваше имя*" required>
+            <input class="order-form__input" type="text" id="customer-name_name" name="first-name"
+              placeholder="Введите ваше имя*" required>
           </label>
           <label class="order-form__label" for="customer-name_surname">
             Фамилия:
-            <input class="order-form__input" type="text" id="customer-name_surname" name="surname" placeholder="Укажите фамилию*" required>
+            <input class="order-form__input" type="text" id="customer-name_surname" name="surname"
+              placeholder="Укажите фамилию*" required>
           </label>
           <label class="order-form__label" for="customer-name_patronymic">
             Отчество:
-            <input class="order-form__input" type="text" id="customer-name_patronymic" name="patronymic" placeholder="Отчество, если желаете">
+            <input class="order-form__input" type="text" id="customer-name_patronymic" name="patronymic"
+              placeholder="Отчество, если желаете">
           </label>
         </div>
       </div>
@@ -183,7 +194,8 @@
           Тел
         </p>
         <div class="order-form__fields">
-          <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="\+7[- ]{0,1}[0-9]{3}[- ]{0,1}[0-9]{3}[- ]{0,1}[0-9]{2}[- ]{0,1}[0-9]{2}" required>
+          <input class="order-form__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+            pattern="\+7[- ]{0,1}[0-9]{3}[- ]{0,1}[0-9]{3}[- ]{0,1}[0-9]{2}[- ]{0,1}[0-9]{2}" required>
         </div>
         <p class="order-form__legend">
           e-mail
@@ -198,7 +210,8 @@
           Доп
         </p>
         <div class="order-form__fields">
-          <textarea class="order-form__input" name="additional-info" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="order-form__input" name="additional-info" rows="4"
+            placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </div>
 
